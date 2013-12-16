@@ -1,0 +1,11 @@
+{
+    "name": "ko3-durandal-cajon",
+    "author": "bestguy",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "*"
+    },
+    "engines": {
+        "node": "*"
+    }
+}
