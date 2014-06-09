@@ -1,8 +1,10 @@
-function DurandalView() {
-    var self = this;
+define(function (require, exports, module) {
+    function DurandalView() {
+        var self = this;
 
-    self.rules = 1;
-    self.sucks = 1;
-}
+        self.rules = 1;
+        self.sucks = 1;
+    }
 
-module.exports = DurandalView;
+    module.exports = DurandalView;
+});
