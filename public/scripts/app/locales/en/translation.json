@@ -1,0 +1,9 @@
+{
+    "app": {
+        "name": "Knockout 3, Knockout Punches, Durandal"
+    },
+    "home": {
+        "knockout": "Knockout",
+        "angular": "Angular"
+    }
+}
