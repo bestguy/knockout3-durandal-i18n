@@ -27,19 +27,6 @@ instead of:
     someDynamicProp(1); // sets
     var x = someDynamicProp(); // gets
 
-### No requirejs boilerplate
-Example uses cajonjs to let you define requirejs modules without the usual `define(function(...) { ... })` boilerplate.
-
-    var $ = require('jquery');
-    function DurandalView() {
-        var self = this;
-
-        self.rules = 1;
-        self.sucks = 1;
-    }
-    module.exports = DurandalView;
-
-
 ## Libraries
 
 - **Knockout 3** - [http://knockoutjs.com](http://knockoutjs.com)
@@ -50,5 +37,5 @@ Example uses cajonjs to let you define requirejs modules without the usual `defi
 	- SPA Application library built on Knockout and requirejs that adds advanced modules and view transition functionality.
 - **Durandal observable plugin** - [http://durandaljs.com/documentation/Binding-Plain-Javascript-Objects/](http://durandaljs.com/documentation/Binding-Plain-Javascript-Objects/)
     - Durandal plugin eliminates need for `ko.observables` everywhere.
-- **cajon** - [https://github.com/requirejs/cajon](https://github.com/requirejs/cajon)
-	- requirejs loader for JavaScript modules which eliminates the need for `define(function(...) { ... })` boilerplate around your module.
+- **requirejs** - [http://requirejs.org/](http://requirejs.org/)
+	- requirejs loader for JavaScript modules.
