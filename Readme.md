@@ -14,6 +14,11 @@ Text filters inside of handlebars:
 
 ```<h1>This is another {{ observable | uppercase }} with an uppercase  filter.</h1>```
 
+I18N text filter inside of handlebars:
+
+```<h2>This is a localized string {{ 'home.label' | i18n }}.</h2>```
+
+
 ### Transparent observables:
 Eliminates need for `ko.observables` and `()`everywhere, use this:
 
@@ -36,6 +41,8 @@ instead of:
 - **Durandal** - [http://durandaljs.com](http://durandaljs.com)
 	- SPA Application library built on Knockout and requirejs that adds advanced modules and view transition functionality.
 - **Durandal observable plugin** - [http://durandaljs.com/documentation/Binding-Plain-Javascript-Objects/](http://durandaljs.com/documentation/Binding-Plain-Javascript-Objects/)
-    - Durandal plugin eliminates need for `ko.observables` everywhere.
+	- Durandal plugin eliminates need for `ko.observables` everywhere.
+- **i18next** - [http://i18next.com/](http://i18next.com/)
+	- Internationalization library
 - **requirejs** - [http://requirejs.org/](http://requirejs.org/)
 	- requirejs loader for JavaScript modules.
