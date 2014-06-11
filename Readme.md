@@ -14,6 +14,8 @@ Text filters inside of handlebars:
 
 ```<h1>This is another {{ observable | uppercase }} with an uppercase  filter.</h1>```
 
+#### {{ 'internationalized.text' | i18n }}
+
 I18N text filter inside of handlebars:
 
 ```<h2>This is a localized string {{ 'home.label' | i18n }}.</h2>```
