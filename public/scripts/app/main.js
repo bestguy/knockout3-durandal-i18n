@@ -8,7 +8,8 @@
         'knockout.punches': '../lib/knockout/knockout.punches',
         'plugins': '../lib/durandal/js/plugins',
         'text': '../lib/require/text',
-        'transitions': '../lib/durandal/js/transitions'
+        'transitions': '../lib/durandal/js/transitions',
+        'underscore': '../lib/underscore/lodash.underscore'
     },
     shim: {
         'jquery.bootstrap': { deps: ['jquery'] }
@@ -17,11 +18,15 @@
 
 define(function (require) {
 
+    var _ = require('underscore');
+
     // ### I18N
     var i18next = require('i18next');
     i18next.init({
         fallbackLng: 'en',
-        resGetPath: '/scripts/app/locales/__lng__/__ns__.json'
+        resGetPath: '/scripts/app/locales/{{lng}}/{{ns}}.json',
+        interpolationPrefix: '{{',
+        interpolationSuffix: '}}'
     });
 
     // Knockout
@@ -33,8 +38,11 @@ define(function (require) {
     ko.punches.attributeInterpolationMarkup.enable();
 
     // I18N Binder
-    ko.filters['i18n'] = function (key) {
-        return i18next.t(key);
+    ko.filters.i18n = function (key) {
+        var params = _.map(_.tail(_.toArray(arguments)), function(param) {
+            return ko.unwrap(param);
+        });
+        return i18next.t(key, params);
     };
 
     // Example handlebars text filter to repeat a value `{{ value | repeat: n }}`
@@ -51,7 +59,7 @@ define(function (require) {
 
     system.debug(true);
 
-    app.title = 'Angular Sucks ;-)';
+    app.title = i18next.t('app.name');
     app.configurePlugins({
         observable: true, // eliminates need for `ko.observable(...)`
         router: true

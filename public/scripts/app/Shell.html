@@ -1,4 +1,13 @@
-<h3>{{ 'app.name' | i18n }}</h3>
+
+<h3>
+  {{ 'app.name' | i18n }}
+</h3>
+<h4>
+  {{ 'app.changeLanguage' | i18n }}
+  <a href="?setLng=en-US"><img src="http://flag-cdn.com/flags/64/us.png" width="32" height="32" alt="US"></a>
+  <a href="?setLng=en-AU"><img src="http://flag-cdn.com/flags/64/au.png" width="32" height="32" alt="AU"></a>
+  <a href="?setLng=zh-CN"><img src="http://flag-cdn.com/flags/64/cn.png" width="32" height="32" alt="CN"></a>
+</h4>
 
 <div class="jumbotron text-center">
     <div data-bind="router: { transition: 'entrance' }"></div>

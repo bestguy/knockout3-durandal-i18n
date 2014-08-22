@@ -1,0 +1,7 @@
+<div class="row">
+    <h2 title="{{ 'home.label' | i18n }}" data-bind="visible: name">
+      {{ 'home.label' | i18n:name }} <!-- Passing the value of 'name' observable, will be embedded in text string -->
+    </h2>
+
+    <input type="text" placeholder="{{ 'home.placeholder' | i18n }}" data-bind="value: name, valueUpdate: 'afterkeydown'"/>
+</div>

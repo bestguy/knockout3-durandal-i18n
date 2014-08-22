@@ -1,0 +1,10 @@
+{
+    "app": {
+        "changeLanguage": "更改语言："
+    },
+    "home": {
+        "title": "家",
+        "label": "{{0}}您好！",
+        "placeholder": "输入你的名字……"
+    }
+}

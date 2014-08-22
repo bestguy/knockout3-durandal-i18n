@@ -1,9 +1,11 @@
 {
     "app": {
-        "name": "Knockout 3, Knockout Punches, Durandal"
+        "name": "I18N Sample",
+        "changeLanguage": "Click to change language:"
     },
     "home": {
-        "knockout": "Knockout",
-        "angular": "Angular"
+        "title": "Home Page",
+        "label": "Hello {{0}}!",
+        "placeholder": "Type your name…"
     }
 }
