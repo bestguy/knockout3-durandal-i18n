@@ -1,0 +1,10 @@
+{
+    "app": {
+        "changeLanguage": "Nhấn vào đây để thay đổi ngôn ngữ:"
+    },
+    "home": {
+        "title": "Trang chủ",
+        "label": "Xin chào {{0}}!",
+        "placeholder": "Nhập tên của bạn…"
+    }
+}
