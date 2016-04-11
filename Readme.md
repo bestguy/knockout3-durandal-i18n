@@ -30,3 +30,11 @@ instead of the usual `data-bind="attr: { someAttribute: ... }"`
 	- Internationalization library
 - **Durandal** - [http://durandaljs.com](http://durandaljs.com)
 	- SPA Application library built on Knockout and requirejs that adds advanced modules and view transition functionality.
+
+## Running:
+
+(Ensure you have installed node.js (https://nodejs.org) and bower (http://bower.io))
+
+    npm install
+    bower install
+    node app.js
