@@ -1,10 +1,13 @@
-var express = require('express');
+'use strict';
 
-var app = express();
+let express = require('express');
+let logger = require('morgan');
 
-app.use(express.logger());
+let app = new express();
+
+// ## Middleware
+
+app.use(logger('dev'));
 app.use(express.static(__dirname + '/public'));
 
-app.listen(3000, function () {
-    console.log('App running on port 3000');
-});
+app.listen(3000, () => console.log('App running on port 3000'));
