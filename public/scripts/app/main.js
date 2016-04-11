@@ -1,24 +1,20 @@
-﻿requirejs.config({
+requirejs.config({
     paths: {
-        'durandal': '../lib/durandal/js',
-        'i18next': '../lib/i18next/i18next.amd-1.7.3',
-        'jquery': '../lib/jquery/jquery-1.9.1',
-        'jquery.bootstrap': '../lib/bootstrap/bootstrap.min',
-        'knockout': '../lib/knockout/knockout-3.1.0',
-        'knockout.punches': '../lib/knockout/knockout.punches',
-        'plugins': '../lib/durandal/js/plugins',
-        'text': '../lib/require/text',
-        'transitions': '../lib/durandal/js/transitions',
-        'underscore': '../lib/underscore/lodash.underscore'
-    },
-    shim: {
-        'jquery.bootstrap': { deps: ['jquery'] }
+        'durandal': '../bower_components/Durandal/js',
+        'i18next': '../lib/i18next/i18next.amd-1.7.3', // TODO use bower versions
+        'jquery': '../bower_components/jquery/jquery',
+        'knockout': '../bower_components/knockout/dist/knockout',
+        'knockout.punches': '../bower_components/knockout.punches/knockout.punches',
+        'lodash': '../bower_components/lodash/dist/lodash',
+        'plugins': '../bower_components/Durandal/js/plugins',
+        'text': '../bower_components/requirejs-text/text',
+        'transitions': '../bower_components/Durandal/js/transitions'
     }
 });
 
 define(function (require) {
 
-    var _ = require('underscore');
+    var _ = require('lodash');
 
     // ### I18N
     var i18next = require('i18next');

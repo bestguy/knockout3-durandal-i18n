@@ -1,0 +1,25 @@
+{
+  "name": "knockout3-durandal-i18n",
+  "version": "0.0.2",
+  "authors": [
+    "bestguy"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Durandal": "durandal#~2.1.0",
+    "i18next": "~2.4.1",
+    "i18next-browser-languagedetector": "~0.2.2",
+    "i18next-xhr-backend": "~0.5.3",
+    "knockout": "~3.4.0",
+    "knockout.punches": "~0.5.1",
+    "lodash": "~4.10.0"
+  }
+}
